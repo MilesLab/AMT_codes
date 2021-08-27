@@ -1,9 +1,6 @@
 
 
 
-#s = "100M100S"
-
-
 cigar_vector <- function(s){
 h = c("D", "M", "S")
 n = as.character(0:9)
@@ -66,3 +63,4 @@ table.match.percentage <- function(table.matches){
     return(NA)
   }
 }
+

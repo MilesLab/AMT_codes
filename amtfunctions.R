@@ -1,5 +1,6 @@
 library(tidyverse)
 source("cigarparse.R")
+
 M_to_S_vector <- function(chimeraTable){
   xdf = as.data.frame(chimeraTable)
   table.percent = c()
@@ -64,6 +65,7 @@ getViennaEnergies <- function(inputtidy){
     }
   }
   
+  outputtidy = inputtidy
   outputtidy$RNAduplex = RNAduplex
   
   energy = c()
