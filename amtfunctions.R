@@ -53,7 +53,7 @@ importChimeraTable <- function(filepath, chimera.cols=c("Read.ID",
 getViennaEnergies <- function(inputtidy){
   
   input.file = as.data.frame(inputtidy)
-  colnames(input.file)=chimera.cols
+  #colnames(input.file)=chimera.cols
   RNAduplex = c()
   for(i in 1:nrow(input.file)){
     duplex = c(as.character(input.file$Sequence.1[i]),as.character(input.file$Sequence.2[i]))
